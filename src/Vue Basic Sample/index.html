@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- the star of the show - the Vue library! -->
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <!-- instance 1 -->
+    <div id="app1">
+        <h1>{{ title }}</h1>
+        <button @click="show" ref="btnShow">
+            Show Paragraph
+        </button>
+        <p v-if="showParagraph"></p>
+    </div>
+
+    <div id="app2">
+        <h1>{{ title }}</h1>
+        <button @click="show">
+            Show Paragraph from Second Instance
+        </button>
+
+        <button @click="onChange">
+            changeTitle
+        </button>
+        <p v-if="showParagraph"></p>
+
+        <hello></hello>
+        <hello></hello>
+    </div>
+
+    <div id="app3"></div>
+    <!-- <hello></hello>
+    <hello></hello> -->
+    <!-- <div class="hello"></div><div class="hello"></div> -->
+</body>
+
+
+</html>

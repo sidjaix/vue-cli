@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import {} from ''
+import { eventBus } from "../../main";
 export default {
   //Communication Parent to child problem
   props: {

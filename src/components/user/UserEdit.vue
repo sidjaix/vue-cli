@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import {eventBus} from '../..'
+import { eventBus } from "../../main";
 export default {
   props: ["userAge"],
   methods: {
@@ -18,8 +18,8 @@ export default {
       //this.$emit('changedAge', this.userAge)
 
       //Communication From child to Sibling
-      eventBus.$emit('changedAge', this.userAge);
-    },
+      eventBus.$emit("changedAge", this.userAge);
+    }
   }
 };
 </script>
