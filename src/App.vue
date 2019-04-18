@@ -7,7 +7,8 @@
         <button @click="selectedComponent='appNew'">New</button>
         <button @click="selectedComponent='appUser'">user</button>
         <button @click="selectedComponent='basicForm'">Basic Form</button>
-        <p>{{selectedComponent}}</p>
+        <button @click="selectedComponent='customDirective'">Custom Directive</button>
+        <button @click="selectedComponent='filterSample'">Filter</button>
 
         <!-- keep Alive the Component -->
         <keep-alive>
@@ -26,7 +27,10 @@ import Author from "../src/components/author/Author.vue";
 import New from "../src/components/author/New.vue";
 //Basic input form binding
 import BasicForm from "../src/components/forms/BasicForm.vue";
-
+// Custom Directive
+import CustomDirective from "./components/directives/CustomDirective.vue";
+// Filter
+import Filter from "./components/filter_and_mixins/Filter.vue";
 
 export default {
   data: function() {
@@ -40,7 +44,9 @@ export default {
     appAuthor: Author,
     appNew: New,
     appUser: User,
-    basicForm: BasicForm
+    basicForm: BasicForm,
+    customDirective: CustomDirective,
+    filterSample: Filter
   }
 };
 </script>
