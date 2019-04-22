@@ -3,22 +3,22 @@
 
 ``` bash
 # bind 
-> This occurs once when the directive is attached to the element.
+This occurs once when the directive is attached to the element.
 
 # inserted  
-> This occurs once the element is inserted into the parent DOM.
+This occurs once the element is inserted into the parent DOM.
 
 # update 
-> This occurs when the element updates, but children haven not been updated yet.
+This occurs when the element updates, but children haven not been updated yet.
 
 # componentUpdated 
-> This occurs once the component and the children have been updated.
+This occurs once the component and the children have been updated.
 
 #unbind 
-> This occurs once the directive is removed
+This occurs once the directive is removed
 ```
 
->Each of these has el, binding and vnode arguments available to them. These arguments are:
+> Each of these has el, binding and vnode arguments available to them. These arguments are:
 
 ``` bash
 el — the element the binding sits on
