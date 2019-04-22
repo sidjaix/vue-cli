@@ -1,11 +1,22 @@
 # Hooks for Directives: 
 > Vue provides a series of hooks for custom directives. Each hook has the option of a few arguments. Here are the hooks that are available:
 
-> bind — this occurs once when the directive is attached to the element.
-> inserted — this occurs once the element is inserted into the parent DOM
-> update — this occurs when the element updates, but children haven't been updated yet
-> componentUpdated — this occurs once the component and the children have been updated
-> unbind — this occurs once the directive is removed
+``` bash
+# bind 
+> This occurs once when the directive is attached to the element.
+
+# inserted  
+> This occurs once the element is inserted into the parent DOM.
+
+# update 
+> This occurs when the element updates, but children haven not been updated yet.
+
+# componentUpdated 
+> This occurs once the component and the children have been updated.
+
+#unbind 
+> This occurs once the directive is removed
+```
 
 >Each of these has el, binding and vnode arguments available to them. These arguments are:
 
