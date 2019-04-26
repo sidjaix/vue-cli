@@ -9,7 +9,7 @@
         <button @click="selectedComponent='basicForm'">Basic Form</button>
         <button @click="selectedComponent='customDirective'">Custom Directive</button>
         <button @click="selectedComponent='filterSample'">Filter</button>
-
+        <button @click="selectedComponent='event'">Event</button>
         <!-- keep Alive the Component -->
         <keep-alive>
           <!-- Dynamic Component -->
@@ -32,6 +32,8 @@ import CustomDirective from "./components/directives/CustomDirective.vue";
 // Filter
 import Filter from "./components/filter_and_mixins/Filter.vue";
 
+import Event from "./components/eventManagement/Event.vue";
+
 export default {
   data: function() {
     return {
@@ -46,7 +48,8 @@ export default {
     appUser: User,
     basicForm: BasicForm,
     customDirective: CustomDirective,
-    filterSample: Filter
+    filterSample: Filter,
+    event: Event
   }
 };
 </script>
