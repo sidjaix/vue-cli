@@ -45,8 +45,7 @@ export default {
     appUser: User,
     basicForm: BasicForm,
     customDirective: CustomDirective,
-    filterSample: Filter,
-    event: Event
+    filterSample: Filter
   }
 };
 </script>
